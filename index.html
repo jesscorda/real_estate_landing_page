@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="font-jakarta">
+    <header>
+      <nav class="px-10 py-8 lg:px-20 flex justify-between items-center">
+        <div>
+          <a href="/">
+            <img src="./public/assets/Logo.svg" alt="reis logo"
+          /></a>
+        </div>
+        <div class="flex justify-between gap-10">
+        <ul class="hidden xl:flex justify-between gap-10 uppercase">
+          <li class="hover:font-semibold"><a href="">Home</a></li>
+          <li class="hover:font-semibold"><a href="">About Us</a></li>
+          <li class="hover:font-semibold"><a href="">Our Agents</a></li>
+          <li class="hover:font-semibold"><a href="">Properties</a></li>
+          <li class="hover:font-semibold"><a href="">Gallery</a></li>
+          <li class="hover:font-semibold"><a href="">Blog</a></li>
+          <li class="hover:font-semibold"><a href="">Contact Us</a></li>
+          <li class="hover:font-semibold"><a href="">Search</a></li>
+        </ul>        
+        <button class="visible hover:bg-gray-100">
+          <img src="./public/assets/Hamburger.svg" alt="menu icon" />
+        </button>
+      </div>
+      </nav>
+    </header>
+
+    <section>
+      <div
+        class="relative bg-primary-50 xl:after:bg-blue-overlay after:left-0 after:top-0 after:z-10 after:absolute cursor-pointer after:opacity-60 after:bottom-0 after:right-0"
+      >
+        <div class="hidden lg:flex"><img src="./public/assets/Hero section.png" alt="house image" /></div>
+        <div
+          class="py-4 xl:absolute top-0 bottom-0 left-0 right-0 z-20 flex flex-col items-center justify-center xl:text-white"
+        >
+          <h1 class="text-2xl xl:text-4xl font-semibold font-playfair">
+            Find Your Dream Home
+          </h1>
+          <p class="text-sm xl:text-md mt-6 px-4 max-sm:text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            voluptatem doloremque fuga possimus praesentium numquam delectus
+            laboriosam
+          </p>
+          <div class="flex gap-5 mt-6">
+            <button class="button bg-primary-500 text-white">Rent</button
+            ><button class="button bg-white text-primary-500">Sale</button>
+          </div>
+          <div
+            class="mt-4 rounded-md bg-white flex w-full flex-wrap px-14 py-4 items-center gap-20 xl:gap-40"
+          >
+            <div class="flex flex-col gap-2 justify-between">
+              <p class="text-primary-700">Locations</p>
+              <p class="flex text-gray-400 text-sm items-center">
+                Select your city
+                <span class="w-6 cursor-pointer"
+                  ><svg
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiBox-root css-uqopch"
+                    focusable="false"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    data-testid="ExpandMoreIcon"
+                  >
+                    <path
+                      d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    ></path></svg
+                ></span>
+              </p>
+            </div>
+            <div class="flex flex-col gap-5 justify-between">
+              <p class="text-primary-700">Property Type</p>
+              <p class="flex text-gray-400 text-sm items-center">
+                Select property type
+                <span class="w-6 cursor-pointer"
+                  ><svg
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root css-uqopch"
+                    focusable="false"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    data-testid="ExpandMoreIcon"
+                  >
+                    <path
+                      d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    ></path></svg
+                ></span>
+              </p>
+            </div>
+            <div class="flex flex-col gap-5 justify-between">
+              <p class="text-primary-700">Rent Range</p>
+              <p class="flex text-gray-400 text-sm items-center">
+                Select rent range
+                <span class="w-6 cursor-pointer"
+                  ><svg
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root css-uqopch"
+                    focusable="false"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    data-testid="ExpandMoreIcon"
+                  >
+                    <path
+                      d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    ></path></svg
+                ></span>
+              </p>
+            </div>
+            <div>
+              <button class="button bg-primary-500 text-white">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-4 mt-12 flex flex-col items-center max-w-[1300px] mx-auto">
+      <h2 class="text-2xl font-bold text-center">Properties By Area</h2>
+      <p class="mt-10 text-sm text-gray-400">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius totam
+        explicabo perferendis ratione tempora culpa! Quo, corporis illo ratione
+        ut fuga ducimus, delectus officiis et aspernatur ullam magni, quia
+        dolorum.
+      </p>
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-6 gap-4">
+        <div
+          class="lg:col-span-2 relative after:bg-[#3B4D81] after:left-0 after:top-0 after:z-10 after:absolute cursor-pointer after:opacity-20 after:bottom-0 lg:after:right-1 after:rounded-xl hover:opacity-90"
+        >
+          <img src="./public//assets/Card 1.png" alt="" />
+          <div class="text-white p-4 absolute top-0 left-0 bottom-0 right-0">
+            <h3 class="text-sm font-semibold">Centerville</h3>
+            <p class="text-xs mt-4">25 listings</p>
+          </div>
+        </div>
+        <div
+          class="lg:col-span-2 relative after:bg-[#3B4D81] after:left-0 after:top-0 after:z-10 after:absolute cursor-pointer after:opacity-20 after:bottom-0 lg:after:right-1 after:rounded-xl hover:opacity-90"
+        >
+          <img src="./public/assets/Card 2.png" alt="" />
+          <div class="text-white p-4 absolute top-0 left-0 bottom-0 right-0">
+            <h3 class="text-sm font-semibold">Centerville</h3>
+            <p class="text-xs mt-4">25 listings</p>
+          </div>
+        </div>
+        <div
+          class="lg:col-span-2 relative after:bg-[#3B4D81] after:left-0 after:top-0 after:z-10 after:absolute cursor-pointer after:opacity-20 after:bottom-0 lg:after:right-1 after:rounded-xl hover:opacity-90"
+        >
+          <img src="./public/assets/Card 3.png" alt="" />
+          <div class="text-white p-4 absolute top-0 left-0 bottom-0 right-0">
+            <h3 class="text-sm font-semibold">Centerville</h3>
+            <p class="text-xs mt-4">25 listings</p>
+          </div>
+        </div>
+        <div
+          class="lg:col-span-3 relative after:bg-[#3B4D81] after:left-0 after:top-0 after:z-10 after:absolute cursor-pointer after:opacity-20 after:bottom-0 lg:after:right-1 after:rounded-xl hover:opacity-90"
+        >
+          <img src="./public/assets/Card 4.png" alt="" />
+          <div class="text-white p-4 absolute top-0 left-0 bottom-0 right-0">
+            <h3 class="text-sm font-semibold">Centerville</h3>
+            <p class="text-xs mt-4">25 listings</p>
+          </div>
+        </div>
+        <div
+          class="lg:col-span-3 relative after:bg-[#3B4D81] after:left-0 after:top-0 after:z-10 after:absolute cursor-pointer after:opacity-20 after:bottom-0 lg:after:right-1 after:rounded-xl hover:opacity-90"
+        >
+          <img src="./public/assets/Card 5.png" alt="" />
+          <div class="text-white p-4 absolute top-0 left-0 bottom-0 right-0">
+            <h3 class="text-sm font-semibold">Centerville</h3>
+            <p class="text-xs mt-4">25 listings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 mt-12 bg-primary-50 flex flex-col items-center py-16">
+      <h3 class="text-2xl font-bold text-center">Properties By Area</h3>
+      <p class="mt-10 text-sm text-gray-400 max-w-4xl text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        animi quisquam quibusdam magnam laboriosam beatae! Amet odio
+      </p>
+      <div class="mt-10 flex flex-wrap justify-center lg:justify-between w-full lg:px-40 gap-5">
+        <div class="bg-white lg:max-w-[15rem] flex flex-col p-4">
+          <div><img src="./public/assets/house Icon.svg" alt="house" /></div>
+          <h4 class="mt-5 text-md font-semibold">Sell your home</h4>
+          <p class="mt-5 text-xs text-gray-400 leading-5">
+            We do a free evaluation to be sure you want to start selling.
+          </p>
+          <a href="" class="mt-5 text-xs text-primary-500">Read More</a>
+        </div>
+        <div class="bg-white lg:max-w-[15rem] flex flex-col p-4">
+          <div><img src="./public/assets/nt Icon.svg" alt="house" /></div>
+          <h4 class="mt-5 text-md font-semibold">Rent your home</h4>
+          <p class="mt-5 text-xs text-gray-400 leading-5">
+            We do a free evaluation to be sure you want to start selling.
+          </p>
+          <a href="" class="mt-5 text-xs text-primary-500">Read More</a>
+        </div>
+        <div class="bg-white lg:max-w-[15rem] flex flex-col p-4">
+          <div><img src="./public/assets/buy Icon.svg" alt="house" /></div>
+          <h4 class="mt-5 text-md font-semibold">Buy a home</h4>
+          <p class="mt-5 text-xs text-gray-400 leading-5">
+            We do a free evaluation to be sure you want to start selling.
+          </p>
+          <a href="" class="mt-5 text-xs text-primary-500">Read More</a>
+        </div>
+        <div class="bg-white lg:max-w-[15rem] flex flex-col p-4">
+          <div>
+            <img src="./public/assets/marketing Icon.svg" alt="house" />
+          </div>
+          <h4 class="mt-5 text-md font-semibold">Free marketing</h4>
+          <p class="mt-5 text-xs text-gray-400 leading-5">
+            We do a free evaluation to be sure you want to start selling.
+          </p>
+          <a href="" class="mt-5 text-xs text-primary-500">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 mt-12 flex flex-col justify-center items-center">
+      <h3 class="text-2xl font-bold text-center">Latest Properties of Rent</h3>
+      <p class="mt-10 text-sm text-gray-400 max-w-4xl text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        animi quisquam quibusdam magnam laboriosam beatae! Amet odio
+      </p>
+      <div class="mt-10 flex flex-wrap w-full justify-center lg:justify-between lg:px-10 xl:px-20 gap-10">
+        <div
+          class="bg-white max-w-[25rem] flex flex-col p-4 border border-[#EAEAEA]"
+        >
+          <div>
+            <img src="./public/assets/Property image.png" alt="house" />
+          </div>
+          <h4 class="mt-5 text-xs font-semibold text-[#363A3D]">
+            <a href=""> 92 ALLIUM PLACE, ORLANDO FL 32827</a>
+          </h4>
+          <p class="mt-5 text-xs text-primary-500 leading-5">$ 590,693</p>
+          <div class="mt-5 text-[10px] text-gray-500 flex gap-4">
+            <span>
+              <img src="./public/assets/Car.svg" alt="car" />
+              <p>4</p>
+            </span>
+            <span>
+              <img src="./public/assets/Bathtub.svg" alt="bathtub" />
+              <p>4</p>
+            </span>
+            <span>
+              <img src="./public/assets/ArrowsOut.svg" alt="arrowsOut" />
+              <p>2.096</p>
+            </span>
+          </div>
+          <div class="mt-4 text-xs flex justify-between items-center">
+            <a href="" class="flex gap-2 items-center"
+              ><img src="./public/assets/Ellipse 1.svg" alt="profile" /> Jenny
+              Wilson</a
+            >
+            <span class="flex gap-2 items-center"
+              ><button><img src="./public/assets/Add.svg" alt="add" /></button><button><img
+                src="./public/assets/Favorite.svg"
+                alt="favorite" /></button><button><img
+                src="./public/assets/Share.svg"
+                alt="share"
+            /></button></span>
+          </div>
+        </div>
+        <div
+          class="bg-white max-w-[25rem] flex flex-col p-4 border border-[#EAEAEA]"
+        >
+          <div>
+            <a href=""
+              ><img src="./public/assets/Property image1.png" alt="house"
+            /></a>
+          </div>
+          <h4 class="mt-5 text-xs font-semibold text-[#363A3D]">
+            <a href=""> <a href=""> 92 ALLIUM PLACE, ORLANDO FL 32827</a> </a>
+          </h4>
+          <p class="mt-5 text-xs text-primary-500 leading-5">$ 590,693</p>
+          <div class="mt-5 text-[10px] text-gray-500 flex gap-4">
+            <span>
+              <img src="./public/assets/Car.svg" alt="car" />
+              <p>4</p>
+            </span>
+            <span>
+              <img src="./public/assets/Bathtub.svg" alt="bathtub" />
+              <p>4</p>
+            </span>
+            <span>
+              <img src="./public/assets/ArrowsOut.svg" alt="arrowsOut" />
+              <p>2.096</p>
+            </span>
+          </div>
+          <div class="mt-4 text-xs flex justify-between items-center">
+            <a href="" class="flex gap-2 items-center"
+              ><img src="./public/assets/Ellipse 1.svg" alt="profile" /> Jenny
+              Wilson</a
+            >
+            <span class="flex gap-2 items-center"
+              ><button><img src="./public/assets/Add.svg" alt="add" /></button><button><img
+                src="./public/assets/Favorite.svg"
+                alt="favorite" /></button><button><img
+                src="./public/assets/Share.svg"
+                alt="share"
+            /></button></span>
+          </div>
+        </div>
+        <div
+          class="bg-white max-w-[25rem] flex flex-col p-4 border border-[#EAEAEA]"
+        >
+          <div>
+            <a href=""></a>
+              <img src="./public/assets/Property image3.png" alt="house"
+            /></a>
+          </div>
+          <h4 class="mt-5 text-xs font-semibold text-[#363A3D]">
+            <a href=""> 92 ALLIUM PLACE, ORLANDO FL 32827</a>
+          </h4>
+          <p class="mt-5 text-xs text-primary-500 leading-5">$ 590,693</p>
+          <div class="mt-5 text-[10px] text-gray-500 flex gap-4">
+            <span>
+              <img src="./public/assets/Car.svg" alt="car" />
+              <p>4</p>
+            </span>
+            <span>
+              <img src="./public/assets/Bathtub.svg" alt="bathtub" />
+              <p>4</p>
+            </span>
+            <span>
+              <img src="./public/assets/ArrowsOut.svg" alt="arrowsOut" />
+              <p>2.096</p>
+            </span>
+          </div>
+          <div class="mt-4 text-xs flex justify-between items-center">
+            <a href="" class="flex gap-2 items-center"
+              ><img src="./public/assets/Ellipse 1.svg" alt="profile" /> Jenny
+              Wilson</a
+            >
+            <span class="flex gap-2 items-center"
+              ><button><img src="./public/assets/Add.svg" alt="add" /></button><button><img
+                src="./public/assets/Favorite.svg"
+                alt="favorite" /></button><button><img
+                src="./public/assets/Share.svg"
+                alt="share"
+            /></button></span>
+          </div>
+        </div>
+        <div
+          class="bg-white max-w-[25rem] flex flex-col p-4 border border-[#EAEAEA]"
+        >
+          <div>
+            <a href="">
+              <img src="./public/assets/Property image4.png" alt="house"
+            /></a>
+          </div>
+          <h4 class="mt-5 text-xs font-semibold text-[#363A3D]">
+            <a href=""> 92 ALLIUM PLACE, ORLANDO FL 32827</a>
+          </h4>
+          <p class="mt-5 text-xs text-primary-500 leading-5">$ 590,693</p>
+          <div class="mt-5 text-[10px] text-gray-500 flex gap-4">
+            <span>
+              <img src="./public/assets/Car.svg" alt="car" />
+              <p>4</p>
+            </span>
+            <span>
+              <img src="./public/assets/Bathtub.svg" alt="bathtub" />
+              <p>4</p>
+            </span>
+            <span>
+              <img src="./public/assets/ArrowsOut.svg" alt="arrowsOut" />
+              <p>2.096</p>
+            </span>
+          </div>
+          <div class="mt-4 text-xs flex justify-between items-center">
+            <a href="" class="flex gap-2 items-center"
+              ><img src="./public/assets/Ellipse 1.svg" alt="profile" /> Jenny
+              Wilson</a
+            >
+            <span class="flex gap-2 items-center"
+              ><button><img src="./public/assets/Add.svg" alt="add" /></button><button><img
+                src="./public/assets/Favorite.svg"
+                alt="favorite" /></button><button><img
+                src="./public/assets/Share.svg"
+                alt="share"
+            /></button></span>
+          </div>
+        </div>
+      </div>
+      <button class="mt-10 button bg-primary-500 text-white">
+        Load more listing
+      </button>
+    </section>
+
+    <section class="px-4 mt-12 flex flex-col items-center py-16">
+      <h3 class="text-2xl font-bold text-center">Latest Properties of Rent</h3>
+      <p class="mt-10 text-sm text-gray-400 max-w-4xl text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        animi quisquam quibusdam magnam laboriosam beatae! Amet odio
+      </p>
+      <div class="mt-10 flex flex-wrap w-full justify-center lg:justify-between lg:px-20 gap-8">
+        <div class="relative hover:opacity-90 hover">
+         <a href=""><img src="./public/assets/latest1.png" alt="" /></a>
+          <div
+            class="text-white p-4 absolute bottom-0 flex gap-10 justify-center items-center w-full"
+          >
+            <span
+              ><img src="./public/assets/MapPin.svg" alt="map pin" />
+              <p class="text-xs">Washington</p></span
+            >
+            <span
+              ><img
+                src="./public/assets/ArrowsOutwhite.svg"
+                alt="square space"
+              />
+              <p class="text-xs">12000</p></span
+            >
+          </div>
+        </div>
+        <div class="relative hover:opacity-90 hover">
+          <a href=""><img src="./public/assets/latest2.png" alt="" /></a>
+          <div
+            class="text-white p-4 absolute bottom-0 flex gap-10 justify-center items-center w-full"
+          >
+            <span
+              ><img src="./public/assets/MapPin.svg" alt="map pin" />
+              <p class="text-xs">Washington</p></span
+            >
+            <span
+              ><img
+                src="./public/assets/ArrowsOutwhite.svg"
+                alt="square space"
+              />
+              <p class="text-xs">12000</p></span
+            >
+          </div>
+        </div>
+        <div class="relative hover:opacity-90 hover">
+          <a href=""><img src="./public/assets/latest3.png" alt="" /></a>
+          <div
+            class="text-white p-4 absolute bottom-0 flex gap-10 justify-center items-center w-full"
+          >
+            <span
+              ><img src="./public/assets/MapPin.svg" alt="map pin" />
+              <p class="text-xs">Washington</p></span
+            >
+            <span
+              ><img
+                src="./public/assets/ArrowsOutwhite.svg"
+                alt="square space"
+              />
+              <p class="text-xs">12000</p></span
+            >
+          </div>
+        </div>
+        <div class="relative hover:opacity-90 hover">
+          <a href=""> <img src="./public/assets/latest4.png" alt="" /></a>
+          <div
+            class="text-white p-4 absolute bottom-0 flex gap-10 justify-center items-center w-full"
+          >
+            <span
+              ><img src="./public/assets/MapPin.svg" alt="map pin" />
+              <p class="text-xs">Washington</p></span
+            >
+            <span
+              ><img
+                src="./public/assets/ArrowsOutwhite.svg"
+                alt="square space"
+              />
+              <p class="text-xs">12000</p></span
+            >
+          </div>
+        </div>
+      </div>
+      <button class="mt-10 button bg-primary-500 text-white">
+        Load more listing
+      </button>
+    </section>
+
+    <section class="px-4 mt-12 bg-primary-50 flex flex-col items-center py-8 lg:py-16">
+      <h3 class="text-2xl font-bold text-center">Contact Us</h3>
+      <p class="mt-10 text-sm text-gray-400 max-w-4xl text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        animi quisquam quibusdam magnam laboriosam beatae! Amet odio
+      </p>
+      <div class="mt-10 bg-white p-4 lg:p-8">
+        <h4 class="text-lg font-bold">Enquiry Form</h4>
+        <p class="mt-5 text-sm">
+          Are you looking for details about a certain property? Ask us a
+          question using the form below.
+        </p>
+        <form class="mt-5 flex flex-wrap flex-col" action="">
+          <div class="flex flex-wrap w-full gap-4">
+            <input
+              class="p-4 flex-1 border border-gray-500"
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+            /><input
+              class="p-4 flex-1 border border-gray-500"
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+            />
+          </div>
+          <input
+            class="mt-5 p-4 w-full border border-gray-500"
+            type="text"
+            name="email"
+            placeholder="Email ID"
+          />
+          <textarea
+            class="mt-5 p-4 w-full border border-gray-500"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="Comments or questions"
+          ></textarea>
+          <button class="mt-5 button bg-primary-500 text-white">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="p-12 flex justify-between flex-wrap">
+      <div>
+        <a href=""><img src="./public/assets/Logo.svg" alt="logo" /></a>
+        <h4 class="text-md font-semibold mt-5">Contact Us</h4>
+        <p class="text-gray-500 text-xs mt-5">Call : +123 400 123</p>
+        <p class="text-gray-500 text-xs mt-5">
+          Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor
+          felis.
+        </p>
+        <a href=""><p class="text-xs mt-5">Email: example@mail.com</p></a>
+        <div class="flex gap-4 mt-5">
+          <button><img src="./public/assets/Social Media facebook.svg" alt="" /></button><button><img
+            src="./public/assets/Social Media linkedin.svg"
+            alt=""
+          /></button><button><img src="./public/assets/Social Media ig.svg" alt="" /></button><button><img
+            src="./public/assets/Social Media o.svg"
+            alt=""
+          /></button>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-md font-semibold mt-5">Features</h4>
+        <ul class="text-xs text-gray-400 flex flex-col gap-5 mt-5">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Become a Host</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-md font-semibold mt-5">Company</h4>
+        <ul class="text-xs text-gray-400 flex flex-col gap-5 mt-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-md font-semibold mt-5">Team and policies</h4>
+        <ul class="text-xs text-gray-400 flex flex-col gap-5 mt-5">
+          <li><a href="#">Terms of servies</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
